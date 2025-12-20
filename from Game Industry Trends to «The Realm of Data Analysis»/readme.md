@@ -1,4 +1,4 @@
-#### Предобработка данных (команда игры «Мир анализа данных»)
+#### [Предобработка данных (команда игры «Мир анализа данных»)](https://github.com/va-srg/practicum/blob/main/from%20Game%20Industry%20Trends%20to%20«The%20Realm%20of%20Data%20Analysis»/data%20preprocessing%20(team%20of%20the%20game%20-%20The%20Realm%20of%20Data%20Analysis).ipynb)
 
 <span style="color: #c0c0c0;">Data Preprocessing (Team of the Game — The Realm of Data Analysis)</span>
 
