@@ -1,0 +1,9 @@
+*.sql linguist-language=SQL
+*.ipynb linguist-detectable=true
+*.md linguist-language=Markdown
+
+*.min.js linguist-generated=true
+*.map linguist-generated=true
+dist/** linguist-generated=true
+
+docs/** -linguist-documentation
