@@ -1,4 +1,3 @@
-*.py linguist-language=Python
+*.sql linguist-detectable=true
 *.sql linguist-language=SQL
 *.ipynb linguist-detectable=true
-*.md linguist-language=Markdown
