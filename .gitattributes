@@ -1,3 +1,11 @@
+*.ipynb linguist-detectable=false
 *.sql linguist-detectable=true
 *.sql linguist-language=SQL
-*.ipynb linguist-detectable=true
+*.py linguist-detectable=true
+*.py linguist-language=Python
+*.md linguist-detectable=true
+*.md linguist-language=Markdown
+*.css linguist-detectable=true
+*.css linguist-language=CSS
+*.json linguist-detectable=true
+*.json linguist-language=JSON
