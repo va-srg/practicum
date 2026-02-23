@@ -21,5 +21,5 @@ python
 ```
 📁 «We’re Open»: new catering establishment/
 |- Exploratory Data Analysis and visualization (for private investors).py      # скрипт python
-|- Exploratory Data Analysis and visualization (for private investors).ipynb   # скрипт с комментариями jupiter
+|- Exploratory Data Analysis and visualization (for private investors).ipynb   # скрипт с комментариями jupyter
 ```
