@@ -1,5 +1,5 @@
 #### [Предобработка данных (команда игры «Мир анализа данных»)](https://github.com/va-srg/practicum/blob/main/from%20Game%20Industry%20Trends%20to%20«The%20Realm%20of%20Data%20Analysis»/data%20preprocessing%20(team%20of%20the%20game%20-%20The%20Realm%20of%20Data%20Analysis).ipynb)
-from Game Industry Trends to «The Realm of Data Analysis»
+data preprocessing (team of the game - The Realm of Data Analysis)
 
 **Цель исследования** - анализ развития игровой индустрии начала XXI века с целью формирования содержательной основы для создания маркетинговой статьи, направленной на расширение пользовательской аудитории. **Основной задачей** является предобработка собранного массива данных командой игры, включая проверку корректности, очистку и структурирование информации для последующего использования при подготовке аналитической статьи
 
@@ -23,5 +23,5 @@ python
 ```
 📁 from Game Industry Trends to «The Realm of Data Analysis»/
 |- data preprocessing (team of the game - The Realm of Data Analysis).py      # скрипт python
-|- data preprocessing (team of the game - The Realm of Data Analysis).ipynb   # скрипт с комментариями jupiter
+|- data preprocessing (team of the game - The Realm of Data Analysis).ipynb   # скрипт с комментариями jupyter
 ```
