@@ -29,8 +29,6 @@ from phik import phik_matrix # для расчета коэффициента к
 # 1. Загрузка и знакомство с данными
 url_dataset1 = 'catering_establishments_info.csv'
 url_dataset2 = 'catering_establishments_price.csv'
-info_df = pd.read_csv(url_dataset1)
-price_df = pd.read_csv(url_dataset2)
 
 try:
     info_df = pd.read_csv(url_dataset1)
@@ -637,3 +635,4 @@ print(
 )
 
 # 4. Итоговый вывод и рекомендации подробное описание в тетрадке jupyter
+
