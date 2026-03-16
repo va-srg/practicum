@@ -1,4 +1,4 @@
-#### Анализ продаж курсов образовательной платформы
+#### [Анализ продаж курсов образовательной платформы](https://datalens.yandex/vwu43dcirxzif)
 Course sales analysis for the educational platform
 
 **Структура работы**
