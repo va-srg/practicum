@@ -22,8 +22,9 @@ superset
 **Структура проекта**
 ```
 📁 Course sales dashboard development/
-|- /dashboard overview      # внешний вид дашборда, подробное описание и аннотация
-|- datasets_er.pdf    	    # er-диаграмма
-|- months_jinja.sql         # запрос для формирования дополнительного датасета
-|- platform_dataset.sql     # запрос для формирования основного датасета
+|- /dashboard overview          # страницы дашборда
+    |- dashboard_annotation.md  # подробное описание и аннотация
+|- datasets_er.pdf    	        # er-диаграмма
+|- months_jinja.sql             # запрос для формирования дополнительного датасета
+|- platform_dataset.sql         # запрос для формирования основного датасета
 ```
