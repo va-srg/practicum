@@ -1,0 +1,52 @@
+.dashboard {
+background-color: #f5f5f5;
+font-family: 'Helvetica';
+}
+
+.header-title {
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+}
+
+div[data-test-viz-type=big_number_total] .header-line {
+  color: #766c8e !important;
+    font-weight: bold;
+    text-align: center;
+}
+
+div.superset-legacy-chart-big-number[class*="css-"] {
+  color: #766c8e !important;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+}
+
+/* скроем фильтры на чартах*/
+.css-xojzyz > .header-controls > .css-avifuq {
+    display: none ;
+}
+/*зададим цвета градиента для rr*/
+.chart-slice[data-test-chart-id="retention_rate"] .r1 { fill: #fefefe; }
+.chart-slice[data-test-chart-id="retention_rate"] .r2 { fill: #b3ced3; }
+.chart-slice[data-test-chart-id="retention_rate"] .r3 { fill: #699ea8; }
+.chart-slice[data-test-chart-id="retention_rate"] .r4 { fill: #47737b; }
+.chart-slice[data-test-chart-id="retention_rate"] .r5 { fill: #23393d; }
+
+/*зададим стиль заголовка*/
+div[data-test-viz-type=table] table th {
+    background-color: #d2cfda;
+    color: #495057;
+    font-weight: bold;
+    padding: 12px;
+}
+
+/*основной текст*/
+div[data-test-viz-type=table] table td {
+  font-size: 13px;
+  font-weight: bold;
+  color: #495057;
+  border-bottom: 2px solid white!important;
+  border: 2px solid white!important;
+  padding: 9px 8px;
+}
