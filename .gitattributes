@@ -9,3 +9,5 @@
 *.css linguist-language=CSS
 *.json linguist-detectable=true
 *.json linguist-language=JSON
+README.md linguist-vendored=true
+readme.md linguist-vendored=true
