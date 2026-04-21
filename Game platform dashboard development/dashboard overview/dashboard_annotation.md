@@ -92,20 +92,20 @@
 |<h6>`purchase_at` - дата покупки</h6>|<h6>`available_plf` - игровая платформа</h6>|<h6>`количество установок на игру` - количество установок на игру методика расчета: отношение уникального числа установок к уникальному числу игр</h6>|<h6>`item_genre` - игровой жанр</h6>|
 |<h6>`avg_rub_currency_round` - округленная до целого значения</h6>|<h6></h6>|<h6>`item_genre` - игровой жанр</h6>|<h6>`badge_tier_share` - мера созданная на уровне датасета "процент редких достижений"</h6>|
 |<h6></h6>|<h6></h6>|<h6>`item_name` - название игры</h6>|<h6></h6>|
-|<h6></h6>|<h6></h6>|<h6>`YoY, %` - метрика год к году, настроен дополнительный датасет фильтром, методика расчета приведена под таблицей*</h6>|<h6></h6>|
+|<h6></h6>|<h6></h6>|<h6>`YoY, %` - метрика год к году, настроен дополнительный датасет фильтром[*1]</h6>|<h6></h6>|
 
-```((COUNT(DISTINCT
-  CASE
-    WHEN DATE_TRUNC('month', CAST(official_launch_at AS date)) = CAST('{{ filter_values("month_start") [0] }}' AS DATE)
-    THEN player_id
-  END
-  ) - COALESCE(COUNT(DISTINCT
-  CASE
-    WHEN DATE_TRUNC('month', CAST(official_launch_at AS DATE)) = CAST('{{ filter_values("month_start") [0] }}' AS DATE) - INTERVAL '1 year'
-    THEN player_id
-  END
-  ), 0))::DECIMAL / NULLIF(COALESCE(COUNT(DISTINCT
-  CASE
-    WHEN DATE_TRUNC('month', CAST(official_launch_at AS date)) = CAST('{{ filter_values("month_start") [0] }}' AS DATE) - INTERVAL '1 year'
-    THEN player_id
-  END), 1), 0))```
+[*1]
+```sql
+((COUNT(DISTINCT
+    CASE
+        WHEN DATE_TRUNC('month', CAST(official_launch_at AS date)) = CAST('{{ filter_values("month_start") [0] }}' AS DATE)
+        THEN player_id
+    END) - COALESCE(COUNT(DISTINCT
+    CASE
+        WHEN DATE_TRUNC('month', CAST(official_launch_at AS DATE)) = CAST('{{ filter_values("month_start") [0] }}' AS DATE) - INTERVAL '1 year'
+        THEN player_id
+    END), 0))::DECIMAL / NULLIF(COALESCE(COUNT(DISTINCT
+    CASE
+        WHEN DATE_TRUNC('month', CAST(official_launch_at AS date)) = CAST('{{ filter_values("month_start") [0] }}' AS DATE) - INTERVAL '1 year'
+        THEN player_id
+    END), 1), 0))```
