@@ -9,6 +9,6 @@
 *.css linguist-language=CSS
 *.json linguist-detectable=true
 *.json linguist-language=JSON
-
-readme.md linguist-generated=true
-README.md linguist-generated=true
+**/readme.md linguist-generated=true
+**/README.md linguist-generated=true
+**/Readme.md linguist-generated=true
